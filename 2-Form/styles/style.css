@@ -1,0 +1,69 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+}
+
+form {
+    background-color: #FFFEFE;
+}
+
+h1 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+a {
+    color: #089FE0;
+}
+
+p {
+    color: #666666;
+}
+
+input[type=text], input[type=email] {
+    background-color: #F5F5F5;
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder {
+    font-style: italic;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-style: normal;
+    outline: none;
+    border: 1px solid #F5F5F5;
+}
+
+input[type=text]:focus::placeholder, input[type=email]:focus::placeholder {
+    background-color: #FFFFFF;
+    font-weight: 400;
+    color: #66666680;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    border-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.agree {
+    font-size: 14px;
+    line-height: 19.06px;
+    color: #666666;
+}
+
+.agree a {
+    text-decoration: none;
+}
