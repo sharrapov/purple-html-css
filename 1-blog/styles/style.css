@@ -20,16 +20,35 @@ h1 {
     margin-bottom: 30px;
 }
 
-body > header {
-    margin: 71px 0;
+body>header {
+    max-width: 1080px;
+    margin: 71px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-body > footer {
-    margin: 94px 0 77px 0;
+.headNav,
+.headNav>a,
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 77px;
 }
 
-header ul {
+body>footer {
+    max-width: 1080px;
+    margin: 94px auto 77px auto;
+    text-align: center;
+}
+
+nav ul {
     list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 40px;
 }
 
 header a {
@@ -40,6 +59,8 @@ header a {
 
 header a span {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 35px;
     width: 35px;
     background-color: #4B5563;
@@ -49,6 +70,7 @@ header a span {
     font-style: normal;
     border-radius: 3px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    margin-right: 11px;
 }
 
 input[type="search"] {
@@ -68,6 +90,17 @@ input[type="search"]::placeholder {
     line-height: 19px;
 }
 
+article {
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+article header {
+    max-width: 525px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 p#eyebrow {
     font-size: 14px;
     line-height: 16px;
@@ -81,6 +114,18 @@ address {
     line-height: 28px;
     font-style: normal;
     margin-bottom: 28px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+address .author-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
 }
 
 address a {
@@ -95,7 +140,8 @@ article main img {
 }
 
 article main p {
-    margin-bottom: 39px;
+    max-width: 708px;
+    margin: 0 auto 39px auto;
 }
 
 p#intro {

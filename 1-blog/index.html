@@ -20,15 +20,19 @@
 
 <body>
     <header>
-        <a href="#"><span>B</span> Мой блог</a>
-        <nav>
-            <ul>
-                <li><a href="#">HTML и CSS</a></li>
-                <li><a href="#">Frontend</a></li>
-                <li><a href="#">Backend</a></li>
-            </ul>
-        </nav>
-        <input type="search" name="q" id="site-search" placeholder="Поиск">
+        <div class="headNav">
+            <a href="#"><span>B</span> Мой блог</a>
+            <nav>
+                <ul>
+                    <li><a href="#">HTML и CSS</a></li>
+                    <li><a href="#">Frontend</a></li>
+                    <li><a href="#">Backend</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headSearch">
+            <input type="search" name="q" id="site-search" placeholder="Поиск">
+        </div>
     </header>
     <main>
         <article>
@@ -37,8 +41,12 @@
                         2024</time></p>
                 <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
                 <address id="author">
-                    <img src="./img/author.png" alt="Author's photo"> <a rel="author" href="#">Наталья Васильева</a>
-                    Разработчик
+                    <div class="author-avatar">
+                        <img src="./img/author.png" alt="Author's photo">
+                    </div> 
+                    <div class="details">
+                        <a rel="author" href="#">Наталья Васильева</a><br />Разработчик
+                    </div>
                 </address>
             </header>
             <main>
