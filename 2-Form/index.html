@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <form action="">
-            <div>
+        <form id="signUpForm" action="#">
+            <header>
                 <h1>Регистрация</h1>
                 <p>Уже есть аккаунт? <a href="#">Войти</a></p>
-            </div>
-            <input type="text" name="myCompany" id="myCompany" placeholder="Компания" value="Мой компания">
-            <div>
-                <input type="text" name="firstName" id="firstName" placeholder="Имя">
-                <input type="text" name="secondName" id="secondName" placeholder="Фамилия">
-            </div>
-            <input type="email" name="email" id="email" placeholder="E-mail" required><br />
-            <button type="submit">Зарегистрироваться</button>
-            <div>
+            </header>
+            <section>
+                <p>
+                    <input type="text" name="myCompany" id="myCompany" placeholder="Компания">
+                </p>
+                <p>
+                    <input type="text" name="firstName" id="firstName" placeholder="Имя">
+                    <input type="text" name="secondName" id="secondName" placeholder="Фамилия">
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </p>
+            </section>
+            <section>
+                <p>
+                    <button type="submit">Зарегистрироваться</button>
+                </p>
+            </section>
+            <section class="agree">
                 <input type="checkbox" name="agree" id="agree">
                 <label for="agree">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-            </div>
+            </section>
         </form>
     </main>
 </body>
