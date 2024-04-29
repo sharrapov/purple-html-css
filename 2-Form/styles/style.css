@@ -45,10 +45,6 @@ form header p {
     margin-bottom: 47px;
 }
 
-form p {
-    margin-bottom: 22px;
-}
-
 input[type=text],
 input[type=email] {
     background-color: #F5F5F5;
@@ -96,6 +92,8 @@ button:hover {
 }
 
 .agree {
+    flex-direction: row;
+    gap: 5px;
     font-size: 14px;
     line-height: 19.06px;
     color: #666666;
@@ -103,4 +101,23 @@ button:hover {
 
 .agree a {
     text-decoration: none;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.nameSurname {
+    display: flex;
+    gap: 1px;
+}
+
+#firstName {
+    border-radius: 5px 0 0 5px;
+}
+
+#secondName {
+    border-radius: 0 5px 5px 0;
 }
