@@ -17,24 +17,29 @@ h1 {
     font-size: 24px;
     line-height: 38px;
     font-weight: 400;
-    margin-bottom: 30px;
 }
 
 body>header {
     max-width: 1080px;
-    margin: 71px auto;
+    margin: 0 auto;
+    padding: 71px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 72px;
 }
 
-.headNav,
-.headNav>a,
+body>header>a,
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 77px;
+}
+
+body>header>a {
+    gap: 11px;
+}
+
+nav ul {
+    gap: 52px;
 }
 
 body>footer {
@@ -47,14 +52,14 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
-    margin-right: 40px;
-}
-
 header a {
     color: #FFF;
     text-decoration: none;
     line-height: 19px;
+}
+
+header>form {
+    margin-left: auto;
 }
 
 header a span {
@@ -70,7 +75,6 @@ header a span {
     font-style: normal;
     border-radius: 3px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
-    margin-right: 11px;
 }
 
 input[type="search"] {
@@ -93,6 +97,9 @@ input[type="search"]::placeholder {
 article {
     max-width: 896px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 article header {
@@ -101,7 +108,10 @@ article header {
     text-align: center;
 }
 
-p#eyebrow {
+#eyebrow {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
     font-size: 14px;
     line-height: 16px;
     color: rgba(255, 255, 255, 0.6);
@@ -113,19 +123,18 @@ address {
     font-size: 14px;
     line-height: 28px;
     font-style: normal;
-    margin-bottom: 28px;
     height: 53px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
+    gap: 15px;
 }
 
 address .author-avatar {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
 }
 
 address a {
@@ -134,17 +143,25 @@ address a {
     text-decoration: none;
 }
 
+article main {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
 article main img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 69px;
 }
 
-article main p {
+#mainText {
     max-width: 708px;
-    margin: 0 auto 39px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-p#intro {
+#intro {
     font-size: 20px;
     line-height: 32px;
 }
